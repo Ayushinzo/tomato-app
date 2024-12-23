@@ -1,0 +1,114 @@
+.log-and-register {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgb(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.log-and-register .login-container {
+    width: 30rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 6px;
+}
+
+.log-and-register .login-container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.log-and-register .login-container .username {
+    margin-top: 1.5rem
+}
+
+.log-and-register .login-container .heading h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.log-and-register .login-container .heading .cancel-icon {
+    font-size: 3rem;
+    cursor: pointer;
+    padding: .3rem;
+}
+
+.log-and-register .login-container .email,
+.log-and-register .login-container .password,
+.log-and-register .login-container .button {
+    margin-top: 1.5rem;
+}
+
+.log-and-register .login-container .email input,
+.log-and-register .login-container .password input,
+.log-and-register .login-container .username input {
+    border: var(--borderColor);
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+}
+
+.log-and-register .login-container .button button {
+    padding: 1rem;
+    background-color: tomato;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.log-and-register .login-container .checkbox {
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.log-and-register .login-container .checkbox p {
+    font-size: 1.3rem;
+}
+
+.log-and-register .login-container .account,
+.log-and-register .login-container .account span {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.log-and-register .login-container .account span {
+    cursor: pointer;
+    color: tomato;
+    text-decoration: underline;
+    text-underline-offset: .3rem;
+}
+
+.log-and-register .login-container .button.active button{
+    background-color: rgb(145, 145, 145);
+}
+
+.load-login {
+    animation: rotateLogin .5s infinite;
+    font-size: 2rem;
+    display: none;
+}
+
+.load-login.active {
+    display: block;
+}
+
+@keyframes rotateLogin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

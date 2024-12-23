@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+    border: none;
+    font-size: 1.5rem;
+}
+
+html {
+    font-size: 65%;
+    width: 100%;
+    height: 100%;
+}
+
+*::selection{
+    background-color: tomato;
+    color: white;
+}
+
+:root {
+    --borderColor: 1px solid rgb(177, 177, 177);
+}
+
+html body {
+    width: 100%;
+    height: 100%;
+}
+
+.hr {
+    height: 1px;
+    background-color: rgb(174, 174, 174);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1300px) {
+    html {
+        font-size: 60%;
+    }
+
+    .dishes .food-container {
+        gap: 2.5rem !important;
+    }
+
+    .my-order .p{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 960px) {
+    .food-app .sub-food-app {
+        width: 100% !important;
+    }
+
+    .dishes .food-container {
+        grid-template-columns: 1fr 1fr 1fr !important;
+        gap: 2rem !important;
+    }
+
+    .cart-item .cart-content .cart-totals p span{
+        display: none;
+    }
+
+    .order{
+        gap: 2rem !important;
+    }
+}
+
+@media (max-width: 720px) {
+    html{
+        font-size: 56%;
+    }
+    .navbar ul {
+        position: absolute;
+        top: 8%;
+        flex-direction: column;
+        text-align: center;
+        right: 0;
+        left: 0;
+        background: tomato;
+        color: white !important;
+        padding: 3rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path .2s linear;
+    }
+
+    .orders .order-items-container{
+        column-gap: 1rem !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    .order{
+        flex-direction: column;
+        align-items: center !important;
+        gap: 4rem !important;
+    }
+
+    .cart-list{
+        grid-template-columns: 1fr !important;
+    }
+
+    .navbar ul.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+    }
+
+    .navbar .menu-icon {
+        display: block !important;
+    }
+
+    .navbar .others {
+        gap: 3rem !important;
+    }
+
+    .navbar .logo-image{
+        display: none !important;
+    }
+
+    .cart-item .cart-content .cart-totals p span{
+        display: inline-block;
+    }
+
+    .banner .content h1 {
+        font-size: 3.6rem !important;
+    }
+
+    .banner .content p {
+        font-size: 1.2rem;
+    }
+
+    .cart-total-container{
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+    }
+
+    .cart-total-container .cart-total{
+        margin-top: 3rem;
+    }
+
+    .banner .content {
+        width: 70% !important;
+        left: 4rem !important;
+        bottom: 4rem !important;
+    }
+
+    .menu p {
+        width: 100% !important;
+    }
+
+    .menu-item-container {
+        gap: 2rem !important;
+    }
+
+    .menu-item-container .menu-item .image img {
+        width: 9rem !important;
+    }
+
+    .footer .first{
+        width: 30rem !important;
+    }
+
+    .footer{
+        padding: 1rem !important;
+        flex-direction: column !important;
+        gap: 4rem !important;
+        padding-top: 3rem !important;
+    }
+
+    .mobile-app .mobile-display{
+        box-shadow: none !important;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .mobile-app .mobile-display h1{
+        font-size: 3rem !important;
+    }
+
+    .mobile-app .mobile-display .app-download-platforms {
+        flex-direction: column;
+        margin-top: 3rem !important;
+    }
+
+    .contact-container .contact .image img{
+        width: 34rem !important;
+    }
+
+    .contact-container .contact{
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .dishes .food-container {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 1.3rem !important;
+    }
+
+    .cart-item .cart-content .cart-totals p span{
+        display: none;
+    }
+
+    .cart-total-container{
+        width: 100% !important;
+    }
+
+    .cart-total-container .cart-total{
+        width: 100%;
+    }
+
+    .promo-code{
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .cart-list .cart-item .image img{
+        width: 12rem !important;
+    }
+
+    .order .delivery-info{
+        width: auto !important;
+        padding: 2rem 1rem !important;
+    }
+
+    .orders .order-top{
+        width: 100% !important;
+    }
+
+    .orders .order-top > p{
+        display: none;
+    }
+
+    .order-items-container .order-item {
+        padding: .5rem !important;
+    }
+
+    .orders .order-top div{
+        display: contents !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .dishes .food-container {
+        grid-template-columns: 1fr !important;
+        gap: 1.3rem !important;
+    }
+
+    .my-order .p .orders{
+        padding: 1rem !important;
+    }
+}

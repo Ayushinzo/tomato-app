@@ -1,0 +1,13 @@
+.food-app{
+    display: flex;
+    justify-content: center;
+}
+
+.food-app .sub-food-app{
+    width: 80%;
+}
+
+.food-app .sub-food-app .hero{
+    padding: 0 1.2rem;
+    margin-top: 2rem;
+}

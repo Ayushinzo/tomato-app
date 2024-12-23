@@ -1,0 +1,23 @@
+.dishes{
+    margin-top: 3rem;
+}
+
+.dishes h2{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.dishes .food-container{
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.dishes .food-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3.5rem;
+}
+
+.dishes .food-container > div{
+    width: 100%;
+}

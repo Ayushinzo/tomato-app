@@ -1,0 +1,48 @@
+.menu {
+    margin-top: 4rem;
+}
+
+.menu p {
+    margin-top: 1.6rem;
+    width: 70rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.menu h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.menu-item-container {
+    margin-top: 3rem;
+    display: flex;
+    overflow-x: scroll;
+    gap: 3rem;
+}
+
+.menu-item-container .menu-item {
+    text-align: center;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.menu-item-container .menu-item.active {
+    background-color: rgb(177, 177, 177);
+    color: white;
+}
+
+.menu-item-container .menu-item .image img {
+    width: 11rem;
+    object-fit: cover;
+}
+
+.menu-item-container .menu-item p {
+    width: 100%;
+    font-weight: 500;
+}
+
+.menu-hr{
+    margin-top: 2rem;
+}

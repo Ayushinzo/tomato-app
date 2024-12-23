@@ -1,0 +1,38 @@
+.list-items {
+    margin: 3rem 4rem;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    padding: 2rem;
+}
+
+.list-items h1{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.list-items .product-hr{
+    margin-top: .6rem;
+    height: 1px;
+    background-color: rgb(180, 180, 180);
+}
+
+.list-items .search-product{
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.list-items .search-product span{
+    font-weight: 500;
+}
+
+.list-items .search-product input{
+    padding: .6rem;
+    border: 1px solid black;
+    margin-left: 1rem;
+    outline: none;
+}
+
+.list-items .search-product input::-webkit-search-cancel-button{
+    appearance: none;
+}

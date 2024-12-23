@@ -1,0 +1,84 @@
+.order{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6rem;
+    gap: 3rem;
+}
+
+.order .delivery-info{
+    width: 47rem;
+    padding: 2rem;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+}
+
+.order .delivery-info h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.order .delivery-info .info{
+    margin-top: 2rem;
+}
+
+.order .delivery-info .info div{
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.order .delivery-info .info .name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-info .info .name input{
+    padding: .8rem;
+    outline: none;
+    border: var(--borderColor);
+    width: 48%;
+}
+
+.delivery-info .info .email-phone{
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-info .info .email-phone input{
+    padding: .8rem;
+    border: var(--borderColor);
+    width: 48%;
+    outline: none;
+}
+
+.delivery-info .info .street input{
+    width: 100%;
+    outline: none;
+    padding: .8rem;
+    border: var(--borderColor);
+}
+
+.delivery-info .info .city-state{
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-info .info .city-state input{
+    width: 48%;
+    outline: none;
+    border: var(--borderColor);
+    padding: .8rem;
+}
+
+.delivery-info .info .code-country{
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-info .info .code-country input{
+    padding: .8rem;
+    outline: none;
+    width: 48%;
+    border: var(--borderColor);
+}

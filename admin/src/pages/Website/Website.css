@@ -1,0 +1,23 @@
+.website-container {
+    margin: 3rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.website {
+    padding: 2.5rem;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    transition: transform .2s linear;
+}
+
+.website:hover{
+    transform: scale(1.03);
+}
+
+.website a img {
+    width: 70rem;
+}

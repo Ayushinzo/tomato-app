@@ -1,0 +1,123 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1.5rem 1.2rem;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    z-index: 10;
+}
+
+.navbar ul li {
+    cursor: pointer;
+    text-underline-offset: .5rem;
+    color: black;
+}
+
+.navbar ul a{
+    text-decoration: none;
+}
+
+.navbar ul li:hover {
+    text-decoration: underline;
+}
+
+.navbar ul li.active {
+    text-decoration: underline;
+}
+
+.navbar .others {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.navbar .others .image-container .image img{
+    width: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.navbar .others .image-container{
+    position: relative;
+}
+
+.navbar .others .image-container .logout{
+    position: absolute;
+    z-index: 10;
+    right: -50%;
+    top: 120%;
+}
+
+.navbar .others .image-container .logout p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    cursor: pointer;
+    background-color: white;
+    padding: 1rem 2rem;
+    border: var(--borderColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 6px;
+}
+
+.navbar .others .image-container .logout.active{
+    display: none;
+}
+
+.navbar .others .image-container .logout .logout-icon{
+    font-size: 2.1rem;
+}
+
+.navbar .others .cart {
+    position: relative;
+}
+
+.navbar .others .cart a{
+    color: black;
+}
+
+.navbar .others .cart p {
+    position: absolute;
+    background: red;
+    border-radius: 50rem;
+    padding: .3rem;
+    color: white;
+    top: -9px;
+    right: -6px;
+    padding: .15rem .4rem;
+    font-size: 12px;
+}
+
+.navbar .others button {
+    background: transparent;
+    border: var(--borderColor);
+    padding: .8rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navbar .others .cart-icon {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.navbar .menu-icon{
+    font-size: 3.5rem;
+    background-color: rgb(138, 138, 138);
+    padding: .3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}

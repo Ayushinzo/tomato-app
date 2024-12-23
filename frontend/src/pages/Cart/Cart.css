@@ -1,0 +1,15 @@
+.cart h1{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 500;
+    color: tomato;
+}
+
+.cart .container{
+    /* display: flex;
+    gap: 4rem; */
+}
+
+.cart .container{
+    margin-top: 3.5rem;
+}

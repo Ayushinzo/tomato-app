@@ -1,0 +1,45 @@
+.menu {
+    margin-top: 8rem;
+    user-select: none;
+}
+
+.menu ul li {
+    list-style-type: none;
+    margin: 3rem 4rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    /* color: white; */
+}
+
+.menu ul li a:hover, .menu ul li:hover{
+    color: tomato;
+}
+
+.dropdown1 ul li,
+.dropdown2 ul li {
+    margin: 1.5rem 2rem;
+}
+
+.dropdown1,
+.dropdown2 {
+    display: none;
+}
+
+.dropdown1.active,
+.dropdown2.active {
+    display: block;
+}
+
+.menu ul li p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul li p .down-icon {
+    font-size: 2.3rem;
+}

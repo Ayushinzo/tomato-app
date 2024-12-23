@@ -1,0 +1,51 @@
+.navbar{
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    background-color: white;
+    border-left: 2px solid rgb(157, 157, 157);
+}
+
+.navbar header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    /* background-color: black;
+    color: white; */
+}
+
+.navbar header .search input{
+    padding: .5rem;
+    outline: none;
+    border: none;
+    width: 20rem;
+    background: transparent;
+    /* color: white; */
+}
+
+.navbar header .search input::-webkit-search-cancel-button{
+    display: none;
+}
+
+.navbar header .search{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    border: 1px solid black;
+    padding: .2rem .6rem;
+    border-radius: 10px;
+}
+
+.navbar header .search .search-icon{
+    font-size: 2.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navbar .profile img{
+    width: 5.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}

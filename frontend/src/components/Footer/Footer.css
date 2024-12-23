@@ -1,0 +1,72 @@
+.footer{
+    margin-top: 4rem;
+    /* background-color: rgb(175, 175, 175); */
+    background-color: black;
+    color: white;
+    padding: 3.5rem 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.footer .first{
+    width: 40rem;
+}
+
+.footer .first h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: tomato;
+}
+
+.footer .first p{
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.footer .first .links{
+    margin-top: 1.3rem;
+    display: flex;
+    gap: 1.4rem;
+}
+
+.footer .first .links svg{
+    font-size: 3rem;
+    color: white;
+}
+
+.footer .first .links svg:hover{
+    color: tomato;
+}
+
+.footer .second h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: tomato;
+}
+
+.footer .second div{
+    margin-top: 1.5rem;
+}
+
+.footer .second div ul li{
+    list-style: none;
+    margin-bottom: .8rem;
+    text-align: center;
+}
+
+.footer .third h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: tomato;
+}
+
+.footer .third .contact-details{
+    margin-top: 1.5rem;
+}
+
+.footer .third .contact-details p{
+    text-align: center;
+    margin-bottom: .8rem;
+}

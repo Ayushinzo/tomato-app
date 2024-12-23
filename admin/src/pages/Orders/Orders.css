@@ -1,0 +1,79 @@
+.orders {
+    margin: 3rem 4rem;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    padding: 2rem;
+}
+
+.orders h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.orders .order-hr{
+    margin-top: .6rem;
+    height: 1px;
+    background-color: rgb(180, 180, 180);
+}
+.orders .count {
+    margin-top: .6rem;
+}
+
+.orders .count p {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.order-container .cus-order {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    max-width: 75rem;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.order-container .cus-order .total-price h2 {
+    text-align: end;
+    padding: .3rem;
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.order-container .cus-order .order-hr {
+    margin-top: 1.5rem;
+}
+
+.order-container .cus-order .btn {
+    margin-top: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-container .cus-order .btn p {
+    font-weight: 500;
+}
+
+.order-container .cus-order p button {
+    padding: 1rem 2.5rem;
+    background-color: tomato;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.order-container .cus-order .btn.active button {
+    background-color: green;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.order-container .cus-order .btn button .track-icon {
+    font-size: 1.8rem;
+}

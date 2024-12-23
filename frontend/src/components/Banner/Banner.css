@@ -1,0 +1,41 @@
+.banner{
+    background-image: url('./../../assets/header_img.png');
+    height: 45rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.banner .content {
+    width: 60rem;
+    position: absolute;
+    bottom: 6rem;
+    left: 8rem;
+    color: white;
+}
+
+.banner .content h1{
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.banner .content p{
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.banner .content button{
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    font-weight: 500;
+}
+
+.banner .content button .right-arrow{
+    font-size: 1.6rem;
+}

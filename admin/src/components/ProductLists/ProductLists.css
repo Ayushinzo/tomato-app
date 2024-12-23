@@ -1,0 +1,77 @@
+.product-lists {
+    width: 100%;
+    overflow-x: scroll;
+    /* overflow-y: scroll; */
+}
+
+.product-lists .heading {
+    border-top: 1px solid rgb(155, 155, 155);
+    padding: .5rem;
+    border-bottom: 2px solid rgb(155, 155, 155);
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 2fr 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.product-lists .heading p {
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.product-lists .pro {
+    border-top: none;
+}
+
+.product-lists .pro p {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.product-lists .pro img {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 1.8rem;
+}
+
+.product-lists .pro .delete-icon {
+    cursor: pointer;
+    font-size: 3.3rem;
+    padding: .4rem;
+    background-color: tomato;
+    color: white;
+}
+
+.product-lists .sub-product-list{
+    min-width: 106rem;
+    margin-top: 1rem;
+}
+
+.product-lists .sub-product-list .no-food {
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-lists .sub-product-list .no-food p {
+    background-color: tomato;
+    color: white;
+    padding: 1rem 3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 10px;
+}
+
+.product-lists .sub-product-list .no-food .add-icon {
+    font-size: 2rem;
+}
+
+.product-lists .sub-product-list .no-food a {
+    text-decoration: none;
+    color: black;
+}

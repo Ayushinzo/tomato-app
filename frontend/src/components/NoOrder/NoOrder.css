@@ -1,0 +1,32 @@
+.no-order{
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.no-order h2{
+    font-size: 3rem;
+    color: tomato;
+}
+
+.no-order p{
+    margin-top: 2rem;
+    width: 20rem;
+}
+
+.no-order p a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    margin: auto;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: 500;
+    background-color: tomato;
+    border-radius: 10px;
+}
+
+.no-order p .go-back{
+    font-size: 2rem;
+}

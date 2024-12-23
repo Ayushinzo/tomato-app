@@ -1,0 +1,26 @@
+.cus-info {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 1.5rem;
+}
+
+.cus-info div {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: tomato;
+    color: white;
+}
+
+.cus-info div p {
+    font-size: 1.4rem;
+}
+
+.cus-info div .icon {
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,127 @@
+.my-order .p h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: tomato;
+    text-align: center;
+}
+
+.my-order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-order .p {
+    width: 90%;
+}
+
+.my-order .p .orders {
+    margin-top: 2rem;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+    box-shadow: 0px 0px 6px 0px rgba(121, 121, 121, 0.75);
+}
+
+.orders {
+    padding: 2rem;
+    background-color: rgb(233, 233, 233);
+}
+
+.orders .order-amount {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.orders .deliver-date {
+    margin-top: .5rem;
+}
+
+.orders .order-amount p {
+    padding: .8rem 1.5rem;
+    background-color: tomato;
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.orders .order-items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 2rem;
+    margin-top: 1rem;
+}
+
+.orders .order-items-container .order-item {
+    border: var(--borderColor);
+    display: flex;
+    padding: .3rem;
+}
+
+.orders .order-items-container .order-item .order-desc {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+
+.order-items-container .order-item .order-desc .total-price p {
+    padding: .6rem .8rem;
+}
+
+.order-item .order-desc .content p {
+    font-size: 1.15rem;
+    margin-bottom: .3rem;
+}
+
+.order-item .order-desc .content p:first-child{
+    font-size: 1.4rem;
+}
+
+.orders .order-items-container .order-item .image img {
+    width: 6rem;
+    height: 100%;
+}
+
+.orders .order-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.orders .order-top>p {
+    padding: .8rem;
+    background-color: tomato;
+    color: white;
+}
+
+.orders .order-top div {
+    display: flex;
+    gap: 4rem;
+}
+
+.orders .order-top div p {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+.orders .order-top div .radio-icon {
+    font-size: 2rem;
+    color: red;
+}
+
+.orders .order-top div .radio-icon.active{
+    color: green;
+}
+
+.orders .order-top div button {
+    padding: .8rem 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background: transparent;
+    background-color: green;
+    color: white;
+}
