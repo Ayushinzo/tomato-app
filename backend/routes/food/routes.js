@@ -6,7 +6,7 @@ import fs from 'fs'
 let foodList = express.Router()
 
 let storage = multer.diskStorage({
-    destination: "uploads",
+    destination: "tmp",
 
     filename: (req, file, cb) => {
         return cb(null, `${Date.now() + '-' + file.originalname}`)
