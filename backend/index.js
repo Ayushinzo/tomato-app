@@ -23,7 +23,7 @@ app.use('/api/food', foodList)
 app.use('/api/order', orderRouter)
 app.use('/api/contact', formRouter)
 app.use(cookieParser())
-app.use(express.static("public"))
+app.use(express.static("tmp"))
 
 app.get('/', (req, res) => {
     res.send("Hello world")

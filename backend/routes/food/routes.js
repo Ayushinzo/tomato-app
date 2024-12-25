@@ -6,7 +6,7 @@ import fs from 'fs'
 let foodList = express.Router()
 
 let storage = multer.diskStorage({
-    destination: "/public",
+    destination: "/tmp",
 
     filename: (req, file, cb) => {
         return cb(null, `${Date.now() + '-' + file.originalname}`)
@@ -70,7 +70,7 @@ foodList.post('/delete', async (req, res) => {
             })
         }
 
-        fs.rm(`public/${deleteItem.filename}`, (err) => { })
+        fs.rm(`tmp/${deleteItem.filename}`, (err) => { })
 
         return res.json({
             success: true,
