@@ -23,12 +23,12 @@ app.use('/api/food', foodList)
 app.use('/api/order', orderRouter)
 app.use('/api/contact', formRouter)
 app.use(cookieParser())
-app.use(express.static("tmp"))
+app.use(express.static("public"))
 
 app.get('/', (req, res) => {
     res.send("Hello world")
 })
 
 app.listen(PORT, () => {
-    console.log("Server running on port " + PORT)
+    console.log(`Server is running on http://localhost:${PORT}`)
 })

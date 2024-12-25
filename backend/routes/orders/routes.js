@@ -132,12 +132,33 @@ orderRouter.post("/accept", async (req, res) => {
     try {
         let { id } = await req.body
 
-        let update = await orderModel.findByIdAndUpdate(id, {status: "Order Accepted"})
+        let update = await orderModel.findByIdAndUpdate(id, { status: "Order Accepted" })
 
         return res.json({
             success: true,
             message: "Order Accepted"
         })
+    } catch (error) {
+        return res.json({
+            success: false,
+            message: error.message
+        })
+    }
+})
+
+orderRouter.post("/delete-order", async (req, res) => {
+    try {
+        const { orderId } = await req.body
+
+        let deleteOrder = await orderModel.findByIdAndDelete(orderId)
+
+        if (deleteOrder) {
+            res.json({
+                success: true,
+                message: "Order deleted"
+            })
+        }
+
     } catch (error) {
         return res.json({
             success: false,

@@ -2,8 +2,10 @@ import React, { useContext, useEffect, useState } from 'react'
 import './MyOrder.css'
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosRadioButtonOn } from "react-icons/io";
+import { RiDeleteBin6Line } from "react-icons/ri";
 import { Context } from '../../Context/Context'
-import axios from 'axios';
+import axios from 'axios'
+import { toast } from 'react-toastify'
 
 function MyOrder() {
   const { url } = useContext(Context)
@@ -13,6 +15,23 @@ function MyOrder() {
     let response = await axios.post(`${url}/api/order/fetch-orders`, {}, { headers: { token: localStorage.getItem("token") } })
 
     setFetchOrder(response.data.data)
+  }
+
+  async function deleteOrder(orderId) {
+    let sure = confirm("Are you sure the order is delivered?")
+    if (sure) {
+      try {
+        let response = await axios.post(`${url}/api/order/delete-order`, {
+          orderId
+        })
+
+        if (response.data.success) {
+          toast.success("Order deleted successfully")
+        }
+      } catch (error) {
+        console.log(error)
+      }
+    }
   }
 
   useEffect(() => {
@@ -60,7 +79,12 @@ function MyOrder() {
               <div className="order-amount">
                 <p>Amount: ₹{item.amount}</p>
               </div>
-              <p className='deliver-date'>Order will be delivered till: 17/04/2004</p>
+              <div className='order-bottom'>
+                <p className='deliver-date'>Order will be delivered till: 17/04/2004</p>
+                {
+                  item.status == "Order Accepted" && <RiDeleteBin6Line onClick={() => deleteOrder(item._id)} className='order-delete' />
+                }
+              </div>
             </div>
           ))
         }

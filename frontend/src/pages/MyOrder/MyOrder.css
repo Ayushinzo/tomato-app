@@ -125,3 +125,20 @@
     background-color: green;
     color: white;
 }
+
+.orders .order-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    align-items: center;
+    margin-top: 1rem;
+    background: tomato;
+    color: white;
+}
+
+.orders .order-bottom .order-delete {
+    font-size: 3rem;
+    cursor: pointer;
+    padding: .3rem;
+}
