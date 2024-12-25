@@ -30,7 +30,7 @@ function ProductLists({ fetchFood, fetchList, deleteFood }) {
                             <div key={index} className="heading pro">
                                 <p>{index + 1}</p>
                                 <p>{item.name}</p>
-                                <img src={`http://localhost:4000/tmp/${item.filename}`} alt="" />
+                                <img src={`http://localhost:4000/${item.filename}`} alt="" />
                                 <p>{item.category}</p>
                                 <p>{item.price}</p>
                                 <p><RiDeleteBin6Line onClick={() => deleteFood(item._id, item.name)} className='delete-icon' /></p>

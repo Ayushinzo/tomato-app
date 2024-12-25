@@ -10,7 +10,7 @@ function FoodOrder({ image, name, qty, price }) {
         <div className='food-order'>
             <div className='order'>
                 <div className="image">
-                    <img src={`${url}/tmp/${image}`} alt="Ice cream" />
+                    <img src={`${url}/${image}`} alt="Ice cream" />
                     <p>{name}</p>
                 </div>
                 <p>× {qty}</p>
