@@ -4,7 +4,7 @@ export let Context = createContext(null)
 
 function ContextFunction({ children }) {
 
-    let url = "http://localhost:4000"
+    let url = "https://tomato-app-nrcm.onrender.com"
 
     let contextValue = {
         url
