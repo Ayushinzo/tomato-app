@@ -15,7 +15,7 @@ function ReactContext({ children }) {
 
     const [displayFoods, setDisplayFoods] = useState([])
 
-    let url = 'http://localhost:4000'
+    let url = 'https://tomato-app-nrcm.onrender.com'
 
     async function fetchFoods() {
         let res = await axios.get(`${url}/api/food/get`)
