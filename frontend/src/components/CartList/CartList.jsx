@@ -27,7 +27,7 @@ function CartList() {
             return (
               <div key={index} className='cart-item'>
                 <div className="image">
-                  <img src={`${url}/${item.filename}`} alt={item.name} />
+                  <img src={`${url}/tmp/${item.filename}`} alt={item.name} />
                 </div>
                 <div className="cart-content">
                   <h2>{item.name}</h2>

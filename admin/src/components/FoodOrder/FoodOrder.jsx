@@ -1,13 +1,16 @@
 import React from 'react'
 import './FoodOrder.css'
 import { memo } from 'react'
+import { useContext } from 'react'
+import { Context } from '../../Context/Context'
 
-function FoodOrder({image, name, qty, price}) {
+function FoodOrder({ image, name, qty, price }) {
+    const { url } = useContext(Context)
     return (
         <div className='food-order'>
             <div className='order'>
                 <div className="image">
-                    <img src={`http://localhost:4000/${image}`} alt="Ice cream" />
+                    <img src={`${url}/tmp/${image}`} alt="Ice cream" />
                     <p>{name}</p>
                 </div>
                 <p>× {qty}</p>

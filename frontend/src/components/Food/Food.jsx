@@ -12,7 +12,7 @@ function Food({ id, name, image, price, description, index }) {
   return (
     <div className='food' key={index}>
       <div className="image">
-        <img src={`${url}/` + image} alt={name} />
+        <img src={`${url}/tmp/` + image} alt={name} />
         <div className="add">
           {
             !cartItems[id] >= 1 ? <IoAdd className='add-item' onClick={() => addItem(id)} /> :

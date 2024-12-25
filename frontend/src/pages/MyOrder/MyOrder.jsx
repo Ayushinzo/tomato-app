@@ -60,7 +60,7 @@ function MyOrder() {
                   item.items.map((order, index) => (
                     <div key={index} className="order-item">
                       <div className="image">
-                        <img src={`${url}/${order.filename}`} alt={order.name} />
+                        <img src={`${url}/tmp/${order.filename}`} alt={order.name} />
                       </div>
                       <div className='order-desc'>
                         <div className="content">
