@@ -11,14 +11,14 @@ formRouter.post('/send', async (req, res) => {
         let email = await jwt.verify(req.body.token, process.env.JWT_SECRET)
         email = email.email
 
-        // let item = await contactModel.findOne({ email: email })
+        let item = await contactModel.findOne({ email: email })
 
-        // if (item) {
-        //     return res.json({
-        //         success: false,
-        //         message: "You have already sent a feedback"
-        //     })
-        // }
+        if (item) {
+            return res.json({
+                success: false,
+                message: "You have already sent a feedback"
+            })
+        }
 
         let contact = new contactModel({
             name: name,
